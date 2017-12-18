@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
@@ -57,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFrag(new OneFragment(), "ONE");
         adapter.addFrag(new TwoFragment(), "TWO");
         adapter.addFrag(new ThreeFragment(), "THREE");
-        adapter.addFrag(new ThreeFragment(), "FOUR");
-        adapter.addFrag(new ThreeFragment(), "FIVE");
+        adapter.addFrag(new FourFragment(), "FOUR");
+        adapter.addFrag(new FiveFragment(), "FIVE");
         viewPager.setAdapter(adapter);
     }
 
